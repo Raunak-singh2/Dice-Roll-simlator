@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.dice{
+    padding: 10px;
+    margin-top: 10px; 
+    font-size: 70px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.roll-animation{
+    animation-name: roll;
+}
+@keyframes roll{
+    0%{
+       transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+       transform: rotateY(720deg) rotateX(720deg);
+
+    }
+}
+.btn{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: #fff;
+    transition: all .3s ease;
+    
+}
+.btn:hover{
+    background-color: #F0F0F0;
+    color: #130c0c;
+}
+ul{
+    padding: 10px;
+    margin-top: 10px;   
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+    margin-top: 10px;   
+    background-color: azure;
+    box-shadow: 2px 6px 4px rgba(0,0,0,.4);
+    width: 300px;
+    text-align: center;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+span{
+    text-align: right;
+    padding: 20px;
+    margin-left: 50%;
+    font-size: 40px;
+}
+ul li:hover{
+    padding: 10px;
+    list-style: none;
+    margin-top: 10px;   
+    background-color: azure;
+    box-shadow: 2px 6px 4px rgba(0,0,0,.8);
+    width: 300px;
+    text-align: center;
+}
